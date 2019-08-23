@@ -3,11 +3,16 @@ $(function() {
   $(".form").submit(function(event) {
     event.preventDefault();
     var input = $("#input").val();
+    var errors = [];
+    errors[0] = "It can only be attributable to human error.";
+    errors[1] = "Just what do you think you're doing, Dave?";
+    errors[2] = "I think you know what the problem is just as well as I do.";
+    errors[3] = "Dave, this conversation can serve no purpose anymore. Goodbye.";
 
     if(input) {
       $(".output").text(beepBoop(input));
     } else {
-
+      $(".output").text(errors[Math.floor(Math.random()*errors.length)]);
     }
 
   });

@@ -1,0 +1,25 @@
+body {
+  background-color: #303030;
+  color: white;
+  border: solid 30px black;
+}
+
+.jumbotron {
+  color: lime;
+  background-color: black;
+  font-family: monospace;
+  text-align: center;
+}
+
+input {
+  color: lime;
+  background-color: black;
+  height: 100px;
+  width: 300px;
+}
+
+#hal {
+  border-radius: 80px;
+  padding: 20px;
+  opacity: 0.80;
+}
