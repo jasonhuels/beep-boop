@@ -1,6 +1,7 @@
 body {
-  background-color: #d1d1d1;
-  color: white;
+  background-color: #dddea4;
+  color: lime;
+  font-size: 14px;
   font-family: monospace;
 }
 
@@ -9,10 +10,10 @@ h1 {
 }
 
 html {
-  border-left: solid 200px #d1d1d1;
-  border-right: solid 200px #d1d1d1;
-  border-top: solid 50px #d1d1d1;
-  border-bottom: solid 50px #d1d1d1;
+  border-left: solid 200px #dddea4;
+  border-right: solid 200px #dddea4;
+  border-top: solid 50px #dddea4;
+  border-bottom: solid 50px #dddea4;
   min-height: 100vh;
   font-family: monospace;
 }
@@ -20,7 +21,7 @@ html {
 .container {
   min-height: 100vh;
   padding: 0px;
-  border: solid 10px #d1d1d1;
+  border: solid 10px #dddea4;
   border-radius: 50px;
   width: auto;
   background-color: #0f0f0f;
@@ -57,15 +58,16 @@ input {
   margin-right: auto;
   width: 90%;
   padding-left: 10px;
+  border-top: solid 30px #d1d1d1;
+  border-style: solid;
+  border-color: #d1d1d1;
 }
 
 .output {
   background-color: black;
-  padding: 30px 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: lime;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
 }
 
 #hal1 {
