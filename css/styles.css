@@ -1,7 +1,7 @@
 body {
-  /* background-color: #000000; */
-  background-color: #0f0f0f;
+  background-color: #d1d1d1;
   color: white;
+  font-family: monospace;
 }
 
 h1 {
@@ -9,19 +9,21 @@ h1 {
 }
 
 html {
-  border-left: solid 200px #000000;
-  border-right: solid 200px #000000;
+  border-left: solid 200px #d1d1d1;
+  border-right: solid 200px #d1d1d1;
+  border-top: solid 50px #d1d1d1;
+  border-bottom: solid 50px #d1d1d1;
   min-height: 100vh;
+  font-family: monospace;
 }
 
 .container {
-  border-left: solid 100px #0f0f0f;
-  border-right: solid 100px #0f0f0f;
   min-height: 100vh;
   padding: 0px;
-  /* background-image: url("../img/monitor.png");
-  background-repeat: no-repeat;
-  background-size: 1000px auto; */
+  border: solid 10px #d1d1d1;
+  border-radius: 50px;
+  width: auto;
+  background-color: #0f0f0f;
 }
 
 .row {
@@ -31,6 +33,10 @@ html {
 input {
   caret-color: lime;
   padding-left: 10px;
+  color: lime;
+  background-color: black;
+  border: none;
+  outline: none;
 }
 
 .jumbotron {
@@ -40,16 +46,9 @@ input {
   text-align: center;
 }
 
-input {
-  color: lime;
-  background-color: black;
+#input {
   height: 50px;
-  width: 90%;
-  background-image: url('img/cmd.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  border: none;
-  outline: none;
+  width: 50%;
 }
 
 .form {
@@ -57,6 +56,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  padding-left: 10px;
 }
 
 .output {
@@ -82,3 +82,16 @@ input {
   width: 15%;
   float: right;
 }
+
+#submit-button {
+  float: right;
+  background-color: black;
+  color: lime;
+  font-family: monospace;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }

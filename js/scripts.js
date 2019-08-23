@@ -3,16 +3,24 @@ $(function() {
   $(".form").submit(function(event) {
     event.preventDefault();
     var input = $("#input").val();
+    var name = $("#name").val();
+    if(!name) {
+      name = "Dave";
+    }
+
     var errors = [];
     errors[0] = "It can only be attributable to human error.";
-    errors[1] = "Just what do you think you're doing, Dave?";
+    errors[1] = "Just what do you think you're doing, "+ name +"?";
     errors[2] = "I think you know what the problem is just as well as I do.";
-    errors[3] = "Dave, this conversation can serve no purpose anymore. Goodbye.";
+    errors[3] = name + ", this conversation can serve no purpose anymore. Goodbye.";
+    var cmdPrompt = "<img src=\"img/cmd.png\"><br><br>";
 
     if(parseInt(input) < 9000) {
-      $(".output").text(beepBoop(input));
+      $(".output").text(beepBoop(input, name));
+      $(".output").prepend(cmdPrompt);
     } else {
       $(".output").text(errors[Math.floor(Math.random()*errors.length)]);
+      $(".output").prepend(cmdPrompt);
     }
 
     $(".form").trigger("reset");
@@ -20,11 +28,11 @@ $(function() {
 });
 
 /////////////// Business Logic /////////////////////////
-function beepBoop(number) {
+function beepBoop(number, name) {
   var output = "";
   var one = "\"Beep!\"";
   var two = "\"Boop!\"";
-  var three = "\"I'm sorry, Dave. I'm afraid I can't do that.\"";
+  var three = "\"I'm sorry, " + name + ". I'm afraid I can't do that.\"";
 
   number = Math.abs(parseInt(number));
 
