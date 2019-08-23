@@ -9,23 +9,23 @@
 _My third Epicodus independent project:  a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the exceptions detailed in the Specifications:_
 
 ## Specifications
-#####* _Spec 1: The program returns a range of numbers from 0 to the user's inputted number_
+* _Spec 1: The program returns a range of numbers from 0 to the user's inputted number_
   * _Input: "4"_
   * _Output: "0, 1, 2, 3, 4"_
 
-#####* _Spec 2: The program replaces numbers containing a 1 with "Beep!"_
+* _Spec 2: The program replaces numbers containing a 1 with "Beep!"_
     * _Input: "4"_
     * _Output: "0, Beep!, 2, 3, 4"_
 
-#####* _Spec 3: The program replaces numbers containing a 2 with "Boop!"_
+* _Spec 3: The program replaces numbers containing a 2 with "Boop!"_
     * _Input: "4"_
     * _Output: "0, Beep!, Boop!, 3, 4"_
 
-#####* _Spec 4: The program replaces numbers containing a 3 with "I'm sorry, Dave. I'm afraid I can't do that."_
+* _Spec 4: The program replaces numbers containing a 3 with "I'm sorry, Dave. I'm afraid I can't do that."_
     * _Input: "4"_
     * _Output: "0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4"_
 
-#####* _Spec 5: With numbers containing any combination of "1, 2, 3" the larger number's specification will take precedence_
+* _Spec 5: With numbers containing any combination of "1, 2, 3" the larger number's specification will take precedence_
     * _Input: "104"_
     * _Output: "98, 99, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., Beep!"_
 
