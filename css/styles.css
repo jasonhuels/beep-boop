@@ -1,7 +1,28 @@
 body {
-  background-color: #303030;
+  /* background-color: #303030; */
+  background-color: #0f0f0f;
   color: white;
-  border: solid 30px black;
+}
+
+h1 {
+  text-shadow: 3px 3px green;
+}
+
+html {
+  border-left: solid 100px black;
+  border-right: solid 100px black;
+  min-height: 100vh;
+}
+
+.container {
+  border-left: solid 100px black;
+  border-right: solid 100px black;
+  min-height: 100vh;
+}
+
+input {
+  caret-color: lime;
+  padding-left: 15px;
 }
 
 .jumbotron {
@@ -18,8 +39,17 @@ input {
   width: 300px;
 }
 
-#hal {
+#hal1 {
   border-radius: 80px;
   padding: 20px;
   opacity: 0.80;
+  width: 15%;
+  float: left;
+}
+#hal2 {
+  border-radius: 80px;
+  padding: 20px;
+  opacity: 0.80;
+  width: 15%;
+  float: right;
 }

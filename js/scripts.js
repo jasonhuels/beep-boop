@@ -9,12 +9,13 @@ $(function() {
     errors[2] = "I think you know what the problem is just as well as I do.";
     errors[3] = "Dave, this conversation can serve no purpose anymore. Goodbye.";
 
-    if(input) {
+    if(parseInt(input) < 9000) {
       $(".output").text(beepBoop(input));
     } else {
       $(".output").text(errors[Math.floor(Math.random()*errors.length)]);
     }
 
+    $("#input").trigger("reset");
   });
 });
 
