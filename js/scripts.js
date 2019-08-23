@@ -1,8 +1,24 @@
+/////////////// User Interface /////////////////////////
+$(function() {
+  $(".form").submit(function(event) {
+    event.preventDefault();
+    var input = $("#input").val();
+
+    if(input) {
+      $(".output").text(beepBoop(input));
+    } else {
+
+    }
+
+  });
+});
+
+/////////////// Business Logic /////////////////////////
 function beepBoop(number) {
   var output = "";
-  var one = "Beep!";
-  var two = "Boop!";
-  var three = "I'm sorry, Dave. I'm afraid I can't do that.";
+  var one = "\"Beep!\"";
+  var two = "\"Boop!\"";
+  var three = "\"I'm sorry, Dave. I'm afraid I can't do that.\"";
 
   number = Math.abs(Math.round(parseInt(number)));
 
@@ -17,7 +33,9 @@ function beepBoop(number) {
       } else {
         output += i.toString();
       }
-      output += ", "; 
+      if(i<number) {
+        output += ", ";
+      }
     }
   } else {
     output = false;
