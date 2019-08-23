@@ -13,14 +13,6 @@ _My third Epicodus independent project:  a web application that takes a number f
   * _Input: "4"_
   * _Output: "0, 1, 2, 3, 4"_
 
-* _Spec : The program will round to the nearest whole number_
-  * _Input: "3.5"_
-  * _Output: "0, 1, 2, 3, 4"_
-
-* _Spec: The program will not except inputs less than 0.5_
-  * _Input: "0.4"_
-  * _Output: "ERROR - Please enter an integer greater than 1"_
-
 * _Spec : The program will convert negative numbers to their absolute value_
   * _Input: "-4"_
   * _Output: "0, 1, 2, 3, 4"_

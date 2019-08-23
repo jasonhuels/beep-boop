@@ -20,7 +20,7 @@ function beepBoop(number) {
   var two = "\"Boop!\"";
   var three = "\"I'm sorry, Dave. I'm afraid I can't do that.\"";
 
-  number = Math.abs(Math.round(parseInt(number)));
+  number = Math.abs(parseInt(number));
 
   if(number > 0) {
     for(let i=0; i<=number; i++) {
@@ -38,7 +38,7 @@ function beepBoop(number) {
       }
     }
   } else {
-    output = false;
+    output = number;
   }
 
   return output;
