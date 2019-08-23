@@ -7,20 +7,21 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <img src="img/hal.gif" alt="HAL 9000" id="hal1">
-        <img src="img/hal.gif" alt="HAL 9000" id="hal2">
-        <h1>Beep! Boop!</h1>
-      </div>
-
-      <div class="row">
-        <div class="radio">
-          <label for="">forward</label>
-          <input type="radio" name="direction" value="forward" checked>
-          <label for="">reverse</label>
-          <input type="radio" name="direction" value="reverse">
+    <div class="container" id="frame">
+      <div class="container" id="screen">
+        <div class="jumbotron">
+          <img src="img/hal.gif" alt="HAL 9000" id="hal1">
+          <img src="img/hal.gif" alt="HAL 9000" id="hal2">
+          <h1>Beep! Boop!</h1>
         </div>
+
+        <div class="row">
+          <div class="radio">
+            <label for="">forward</label>
+            <input type="radio" name="direction" value="forward" checked>
+            <label for="">reverse</label>
+            <input type="radio" name="direction" value="reverse">
+          </div>
 
           <form class="form">
             <img src="img/cmd.png" alt="">
@@ -32,11 +33,10 @@
             <button type="submit" id="submit-button" class="btn btn-success">Run Script</button>
             <div class="output"></div>
           </form>
-
-
+        </div>
       </div>
     </div>
-
+    <span id="compy">COMPY 386</span>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>

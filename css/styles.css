@@ -3,6 +3,7 @@ body {
   color: lime;
   font-size: 14px;
   font-family: monospace;
+  background-image: linear-gradient(#dddea4, #c8c989);
 }
 
 h1 {
@@ -10,10 +11,11 @@ h1 {
 }
 
 html {
-  border-left: solid 200px #dddea4;
-  border-right: solid 200px #dddea4;
+  border-left: solid 100px #dddea4;
+  border-right: solid 100px #dddea4;
   border-top: solid 50px #dddea4;
   border-bottom: solid 50px #dddea4;
+  border-color: linear-gradient(#dddea4, #f1f2aa);
   min-height: 100vh;
   font-family: monospace;
 }
@@ -102,4 +104,18 @@ input[type=number]::-webkit-outer-spin-button {
 .radio label {
   padding-left: 300px;
   padding-right: 30px;
+}
+
+#compy {
+  padding-left: 30px;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#frame {
+  /* background-color: grey; */
+  border: solid 40px #afb068;
+  background-image: linear-gradient(#dddea4, #c8c989);
 }
