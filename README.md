@@ -13,6 +13,10 @@ _My third Epicodus independent project:  a web application that takes a number f
   * _Input: "4"_
   * _Output: "0, 1, 2, 3, 4"_
 
+* _Spec: The program will not accept values over 9000, to prevent crashing the browser_
+  * _Input: "4"_
+  * _Output: "0, 1, 2, 3, 4"_
+
 * _Spec : The program will convert negative numbers to their absolute value_
   * _Input: "-4"_
   * _Output: "0, 1, 2, 3, 4"_

@@ -9,8 +9,8 @@ h1 {
 }
 
 html {
-  border-left: solid 100px black;
-  border-right: solid 100px black;
+  border-left: solid 200px black;
+  border-right: solid 200px black;
   min-height: 100vh;
 }
 
@@ -18,11 +18,16 @@ html {
   border-left: solid 100px black;
   border-right: solid 100px black;
   min-height: 100vh;
+  padding: 0px;
+}
+
+.row {
+  padding: 20px;
 }
 
 input {
   caret-color: lime;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .jumbotron {

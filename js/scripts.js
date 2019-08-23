@@ -15,7 +15,7 @@ $(function() {
       $(".output").text(errors[Math.floor(Math.random()*errors.length)]);
     }
 
-    $("#input").trigger("reset");
+    $(".form").trigger("reset");
   });
 });
 
