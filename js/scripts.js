@@ -7,18 +7,13 @@ $(function() {
     if(!name) {
       name = "Dave";
     }
-    var operation = $("input:radio[name=direction]:checked").val();
-    var direction = 1;
-    if(operation === "reverse") {
-      direction = -1;
-    } else {
-      direction = 1;
-    }
+    var direction = $("input:radio[name=direction]:checked").val();
     var errors = [];
     errors[0] = "It can only be attributable to human error.";
     errors[1] = "Just what do you think you're doing, "+ name +"?";
     errors[2] = "I think you know what the problem is just as well as I do.";
     errors[3] = name + ", this conversation can serve no purpose anymore. Goodbye.";
+    errors[4] = "FLAGRANT SYSTEM ERROR: The System is down."
     var randomIndex = Math.floor(Math.random()*errors.length);
     var cmdPrompt = "<img src=\"img/cmd.png\"><br><br>";
 
@@ -43,23 +38,19 @@ function beepBoop(number, name, direction) {
 
   number = Math.abs(parseInt(number));
 
-  if(number > 0) {
-    for(let i=(number*direction-number)/2; i<=(number*direction+number)/2; i++) {
-      if(i.toString().includes("3")) {
-        output += three;
-      } else if(i.toString().includes("2")) {
-        output += two;
-      } else if(i.toString().includes("1")) {
-        output += one;
-      } else {
-        output += Math.abs(i).toString();
-      }
-      if(i<(number*direction+number)/2) {
-        output += ", ";
-      }
+  for(let i=(number*direction-number)/2; i<=(number*direction+number)/2; i++) {
+    if(i.toString().includes("3")) {
+      output += three;
+    } else if(i.toString().includes("2")) {
+      output += two;
+    } else if(i.toString().includes("1")) {
+      output += one;
+    } else {
+      output += Math.abs(i).toString();
     }
-  } else {
-    output = number;
+    if(i<(number*direction+number)/2) {
+      output += ", ";
+    }
   }
 
   return output;

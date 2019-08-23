@@ -1,9 +1,8 @@
 body {
   background-color: #dddea4;
   color: lime;
-  font-size: 14px;
+  font-size: 16px;
   font-family: monospace;
-  background-image: linear-gradient(#dddea4, #c8c989);
 }
 
 h1 {
@@ -15,7 +14,6 @@ html {
   border-right: solid 100px #dddea4;
   border-top: solid 50px #dddea4;
   border-bottom: solid 50px #dddea4;
-  border-color: linear-gradient(#dddea4, #f1f2aa);
   min-height: 100vh;
   font-family: monospace;
 }
@@ -26,7 +24,7 @@ html {
   border: solid 10px #dddea4;
   border-radius: 50px;
   width: auto;
-  background-color: #0f0f0f;
+  background-image: radial-gradient(black, #0f0f0f, #292929);
 }
 
 .row {
@@ -44,7 +42,7 @@ input {
 
 .jumbotron {
   color: lime;
-  background-color: #0f0f0f;
+  background-color: transparent;
   font-family: monospace;
   text-align: center;
 }
@@ -59,7 +57,9 @@ input {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
   border-top: solid 30px #d1d1d1;
   border-style: solid;
   border-color: #d1d1d1;
@@ -69,7 +69,6 @@ input {
   background-color: black;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: lime;
 }
 
 #hal1 {
@@ -112,10 +111,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 30px;
   font-style: italic;
   font-weight: bolder;
+  text-shadow: 1px 1px #0f0f0f;
 }
 
 #frame {
-  /* background-color: grey; */
   border: solid 40px #afb068;
   background-image: linear-gradient(#dddea4, #c8c989);
 }
