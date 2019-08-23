@@ -37,6 +37,9 @@ _My third Epicodus independent project:  a web application that takes a number f
     * _Input: "104"_
     * _Output: "98, 99, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., Beep!"_
 
+* _Spec: Allow users to choose to run the function counting down instead of up_
+    * _Input: "4"_
+    * _Output: "4, I'm sorry, Dave. I'm afraid I can't do that., Boop!, Beep!, 0"_
 
 
 ## Setup/Installation Requirements
