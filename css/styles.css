@@ -1,5 +1,5 @@
 body {
-  /* background-color: #303030; */
+  /* background-color: #000000; */
   background-color: #0f0f0f;
   color: white;
 }
@@ -9,14 +9,14 @@ h1 {
 }
 
 html {
-  border-left: solid 200px black;
-  border-right: solid 200px black;
+  border-left: solid 200px #000000;
+  border-right: solid 200px #000000;
   min-height: 100vh;
 }
 
 .container {
-  border-left: solid 100px black;
-  border-right: solid 100px black;
+  border-left: solid 100px #0f0f0f;
+  border-right: solid 100px #0f0f0f;
   min-height: 100vh;
   padding: 0px;
 }
@@ -32,7 +32,7 @@ input {
 
 .jumbotron {
   color: lime;
-  background-color: black;
+  background-color: #0f0f0f;
   font-family: monospace;
   text-align: center;
 }
@@ -40,8 +40,24 @@ input {
 input {
   color: lime;
   background-color: black;
-  height: 100px;
-  width: 300px;
+  height: 50px;
+  width: 90%;
+  background-image: url('img/cmd.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+
+.form {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.output {
+  background-color: black;
+  padding: 30px 10px;
+  color: lime;
 }
 
 #hal1 {
