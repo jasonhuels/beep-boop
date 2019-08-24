@@ -38,6 +38,7 @@ input {
   background-color: black;
   border: none;
   outline: none;
+  width: 25%;
 }
 
 .jumbotron {
@@ -49,7 +50,7 @@ input {
 
 #input {
   height: 50px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .form {
@@ -63,6 +64,8 @@ input {
   border-top: solid 30px #d1d1d1;
   border-style: solid;
   border-color: #d1d1d1;
+  overflow-y: scroll;
+  height: 400px;
 }
 
 .output {
