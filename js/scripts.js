@@ -25,7 +25,7 @@ $(function() {
       $(".output").prepend(cmdPrompt);
     }
 
-    $(".form").trigger("reset");
+    $("#input").val("");
   });
 });
 
