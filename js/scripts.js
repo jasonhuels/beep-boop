@@ -35,7 +35,6 @@ function beepBoop(number, name, direction) {
   var one = "\"Beep!\"";
   var two = "\"Boop!\"";
   var three = "\"I'm sorry, " + name + ". I'm afraid I can't do that.\"";
-
   number = Math.abs(parseInt(number));
 
   for(let i=(number*direction-number)/2; i<=(number*direction+number)/2; i++) {
